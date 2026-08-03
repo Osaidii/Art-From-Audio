@@ -21,14 +21,7 @@ while running:
         if event.type == pygame.QUIT:
             running = False
 
-    #audio_data = sd.rec(int(44100 * 0.8), samplerate=44100, channels=1, dtype='float32')
-    #sd.wait()
-    
-    #volume = np.linalg.norm(audio_data) * 10
-
     screen.fill((0, 0, 0))
-
-    #pygame.draw.circle(screen, (255, 0, 0), (x // 2, y // 2), int(volume))
 
     pygame.display.flip()
     clock.tick(60)
